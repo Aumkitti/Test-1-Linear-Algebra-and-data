@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>เว็บจับคู่ผู้ประกอบการกับนักศึกษาฝึกงาน</h1>
+
+        <div class="table-container">
+            <div class="table">
+                <h2>ผู้ประกอบการ</h2>
+                <div class="list" id="businesses"></div>
+            </div>
+            <div class="table">
+                <h2>นักศึกษา</h2>
+                <div class="list" id="interns"></div>
+            </div>
+        </div>
+
+        <button onclick="match()">จับคู่</button>
+
+        <h2>ผลการจับคู่</h2>
+        <div id="matches" class="matches"></div>
+        
+    </div>
+    <div class="add-form">
+            <h3>Add Business</h3>
+            <input type="text" id="businessName" placeholder="Name">
+            <input type="text" id="businessExpertise" placeholder="Expertise (comma-separated)">
+            <button onclick="addBusiness()">Add</button>
+
+            <h3>Add Intern</h3>
+            <input type="text" id="internName" placeholder="Name">
+            <input type="text" id="internSkills" placeholder="Skills (comma-separated)">
+            <button onclick="addIntern()">Add</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
